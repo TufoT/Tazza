@@ -17,4 +17,4 @@ All the images used in this project are from unsplash.com
 #
 
 If you want to visit the finished site:
-tazza-theta.vercel.app
+tazza-tufot.vercel.app
