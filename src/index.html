@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="tailwind.css">
+    <title>Tazza</title>
+</head>
+<body>
+    <div class="sticky top-0 w-full h-24 text-white bg-black font-inco border-b border-slate-500 z-50">
+        <nav class="flex items-center justify-between px-24 py-8 max-w-screen-xl mx-auto">
+            <a href="#top" class="text-4xl font-bold tracking-wide hover:text-amber-300 transition ease-in-out 1s "><span class="text-amber-300">T</span>azza</a>
+            <ul class="flex items-center space-x-8">
+                <li class="invisible md:visible lg:visible font-medium hover:text-amber-300 transition ease-in-out 1s"><a href="#coffee">ourCoffee</a></li>
+                <li class="invisible md:visible lg:visible font-medium hover:text-amber-300 transition ease-in-out 1s"><a href="#service">ourService</a></li>
+                <li class="invisible md:visible lg:visible font-medium hover:text-amber-300 transition ease-in-out 1s"><a href="#bar">ourBar</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="top">
+        <div class="h-h-bg bg-cover w-full bg-gradient-to-br from-slate-600 to-slate-700 font-inco relative">
+            <img src="/img/background.jpg" class="w-full h-full object-cover mix-blend-overlay absolute">
+            <div class="flex min-h-screen items-center justify-center">
+                <h2 class="text-2xl ml-4 md:ml-0 lg:ml-0 md:text-4xl lg:text-6xl mb-6 mr-0 md:mb-16 md:mr-3 lg:mb-16 lg:mr-3 text-white ">For the love of <span class="text-amber-300">coffee</span>,</h2>
+                <h3 id="coffee" class="text-2xl md:text-3xl lg:text-5xl text-white"><br> come to our coffee <span class="text-amber-300">bar</span>.</h3>
+            </div>
+        </div>
+    </div>
+    <div class="flex md:block lg:block h-cf md:h-96 lg:h-80 bg-black border-t border-b border-slate-500">
+        <h3 class="invisible md:visible lg:visible text-3xl text-white p-5 text-center font-inco mb-5">Coffee's we use</h3>
+        <div class="flex  flex-col md:flex-row lg:flex-row items-start md:items-center lg:items-center justify-around">
+            <div class="flex flex-col items-center justify-center w-1/3">
+                <div class="flex items-center">
+                    <img src="/img/b-icon.png" class="h-8 w-8">
+                    <p class="text-white text-xl font-bold tracking-wide font-inco ml-4">Arabica</p>
+                </div>
+                <div class="h-6 w-60 mt-5 text-center">
+                    <p class="text-white">Arabica coffee is a species of coffee plant, scientifically known as Coffea arabica. 
+                    It is the most widely cultivated species of coffee in the world and is known for its 
+                    high-quality flavor and aroma.</p>
+                </div> 
+            </div>
+            <div class="flex flex-col items-center justify-center w-1/3">
+                <div class="flex items-center">
+                    <img src="/img/b-icon.png" class="h-8 w-8">
+                    <p class="text-white text-xl font-bold tracking-wide font-inco ml-4">Sherry</p>
+                </div>
+                <div class="h-6 w-60 mt-5 text-center">
+                    <p class="text-white">Sherry coffee is a type of flavored coffee that is infused with
+                         sherry, a fortified wine from the region of Jerez de la Frontera in southern Spain.
+                        </p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center w-1/3">
+                <div class="flex items-center">
+                    <img src="/img/b-icon.png" class="h-8 w-8">
+                    <p class="text-white text-xl font-bold tracking-wide font-inco ml-4">Robusta</p>
+                </div>
+                <div id="service" class="h-6 w-60 mt-5 text-center">
+                    <p class="text-white">Robusta coffee is another species of coffee plant, 
+                        scientifically known as Coffea canephora. It is the second most widely 
+                        cultivated species of coffee in the world, after Arabica.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-center justify-between p-10 bg-black border-b border-slate-500">
+        <div class="w-1/2 ml-0 md:ml-20 lg:ml-20">
+            <h2 class="text-amber-300 text-2xl font-bold font-inco mb-4">ourService</h2>
+            <div class="h-auto w-72 lg:w-96">
+                <p class="text-white text-xl font-inco">
+                    Good service at a coffee bar is characterized by friendly and attentive staff 
+                    who are knowledgeable about the menu and can provide recommendations to customers. 
+                    They should be able to take orders quickly and accurately, and prepare drinks efficiently 
+                    while maintaining high quality standards. The atmosphere of the coffee bar should be clean 
+                    and comfortable, with a welcoming ambiance that encourages customers to linger and enjoy 
+                    their drinks. Overall, a coffee bar with good service creates a positive experience for 
+                    customers, leaving them satisfied and likely to return for more.
+                </p>
+            </div>
+        </div>
+        <div class="w-1/3 p-10 mr-20 invisible md:visible lg:visible">
+            <img src="/img/picture1.jpg">
+        </div>
+    </div>
+    <div class="block md:block lg:flex items-center justify-start md:justify-start lg:justify-between p-10 bg-black border-b border-slate-500">
+        <div class="w-72 md:w-96 lg:w-1/3 p-10 ml-0 md:ml-52 lg:ml-10">
+            <img src="/img/picture2.jpg">
+        </div>
+        <div class="w-1/2 pl-0 md:pl-64 lg:pl-64 mr-4 md:mr-4 lg:mr-0">
+            <h2 class="text-amber-300 text-1xl md:text-2xl lg:text-2xl font-bold font-inco mb-4">ourBar</h2>
+            <div class="h-auto w-72 lg:w-96">
+                <p class="text-white text-xl md:text-xl lg:text-xl font-inco">
+                    Our coffee bar is characterized by its exceptional coffee, knowledgeable baristas, 
+                    and welcoming atmosphere. The coffee is typically made using high-quality beans that are 
+                    roasted to perfection and brewed with care to bring out their unique flavors and aromas. 
+                    The baristas are well-trained and passionate about their craft, able to provide 
+                    recommendations and answer questions about the coffee and brewing methods. 
+                    The atmosphere is cozy and inviting, with comfortable seating and a relaxed ambiance 
+                    that encourages customers to linger and enjoy their drinks. Overall, a great coffee 
+                    bar offers a memorable coffee experience that keeps customers coming back for more.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="h-32 bg-black flex flex-col items-center justify-center text-white font-inco text-center">
+        <h2 id="bar" class="text-amber-300 text-xl font-bold mb-2 mt-2 text-center">Tazza</h2>
+        <p class="mb-2">Tazza is a mockup website that i made for practice. <br>
+        This website was created by <span class="text-amber-300">Tufo</span>. </p>
+        <div class="flex items-center mb-4"> 
+            <a href="#" class="ml-4"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="ml-4"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="ml-4"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+</body>
+</html>
